@@ -1,6 +1,6 @@
-FROM pytorch/pytorch:1.0-cuda10.0-cudnn7-runtime
+FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime
 
-RUN pip install tensorboardX==1.6.0
+RUN pip install tensorboardX==2.6.2.1
 RUN mkdir -p /opt/mnist
 
 WORKDIR /opt/mnist/src
